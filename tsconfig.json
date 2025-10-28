@@ -1,0 +1,60 @@
+{
+  // Visit https://aka.ms/tsconfig to read more about this file
+  "compilerOptions": {
+    // File Layout
+    // "rootDir": "./src",
+    // "outDir": "./dist",
+
+    // Environment Settings
+    // See also https://aka.ms/tsconfig/module
+    "module": "esnext",
+    "target": "es6",
+    "types": [],
+    // For nodejs:
+    // "lib": ["ES6","DOM", "DOM.Iterable", "ScriptHost"],
+    // "types": ["node"],
+    // and npm install -D @types/node
+
+    // Other Outputs
+    // jsとtsの架け橋になるmapファイルを作る
+    // jsからtsを作り出すマップファイルを作成
+    // "sourceMap": true,
+    // "declaration": true,
+    // "declarationMap": true,
+
+    // Stricter Typechecking Options
+    "noUncheckedIndexedAccess": true,
+    "exactOptionalPropertyTypes": true,
+
+    // Style Options
+    // "noImplicitReturns": true,
+    // "noImplicitOverride": true,
+    // "noUnusedLocals": true,
+    // "noUnusedParameters": true,
+    // "noFallthroughCasesInSwitch": true,
+    // "noPropertyAccessFromIndexSignature": true,
+
+    // Recommended Options
+    "strict": true,
+    "jsx": "react-jsx",
+    "verbatimModuleSyntax": true,
+    "isolatedModules": true,
+    "noUncheckedSideEffectImports": true,
+    // "moduleDetection": "force",
+    "skipLibCheck": true
+  },
+  // excludeの方が強い
+  // "include": ["type_lesson.ts"],
+  // コンパイルしないファイルを選ぶ設定.
+  // "exclude": [
+  //   // 階層が違う場合は書かないといけない
+  //   // アスタリスク二つをつければどのディレクトリでも適用
+  //   "**/compiler.ts",
+  //   "*.spec.ts",
+  //   // nodemoduleのパッケージ
+  //   // excludeをしていしなければデフォルトで適用
+  //   "node_modules"
+  // ],
+  // // ワイドカード、ディレクトリを適用できない
+  // "files": ["compiler.ts"]
+}
